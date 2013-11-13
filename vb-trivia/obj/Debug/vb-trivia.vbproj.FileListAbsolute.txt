@@ -1,0 +1,11 @@
+\\VBOXSVR\Público\vb-trivia\vb-trivia\bin\Debug\vb-trivia.exe
+\\VBOXSVR\Público\vb-trivia\vb-trivia\bin\Debug\vb-trivia.pdb
+\\VBOXSVR\Público\vb-trivia\vb-trivia\bin\Debug\vb-trivia.xml
+\\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\ResolveAssemblyReference.cache
+\\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb_trivia.frm_login.resources
+\\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb_trivia.Resources.resources
+\\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb-trivia.vbproj.GenerateResource.Cache
+\\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb-trivia.exe
+\\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb-trivia.xml
+\\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb-trivia.pdb
+\\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb_trivia.mdi_form.resources
