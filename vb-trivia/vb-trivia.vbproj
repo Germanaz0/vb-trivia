@@ -72,6 +72,12 @@
   <ItemGroup>
     <Compile Include="classTrivia.vb" />
     <Compile Include="classUser.vb" />
+    <Compile Include="frm_acerca.Designer.vb">
+      <DependentUpon>frm_acerca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_acerca.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,12 @@
       <DependentUpon>frm_trivia.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_trivia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_user.Designer.vb">
+      <DependentUpon>frm_user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_user.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_userpoints.Designer.vb">
@@ -116,11 +128,17 @@
     <Compile Include="Mysql.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_acerca.resx">
+      <DependentUpon>frm_acerca.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_trivia.resx">
       <DependentUpon>frm_trivia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_user.resx">
+      <DependentUpon>frm_user.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_userpoints.resx">
       <DependentUpon>frm_userpoints.vb</DependentUpon>

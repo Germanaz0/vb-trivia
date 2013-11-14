@@ -86,4 +86,13 @@
         Return Res
     End Function
 
+    Public Function savePassword(ByVal Password As String)
+        ''UPDATE `vb-trivia`.`usuarios` SET `password` = 'admin2' WHERE `usuarios`.`id` =1;
+
+        Dim Query As String
+        Query = "UPDATE usuarios SET password = '{0}' WHERE id = {1}"
+
+        Return db.QUERY(String.Format(Query, Password, Me.ID))
+    End Function
+
 End Class

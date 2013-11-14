@@ -12,3 +12,5 @@
 \\VBOXSVR\Público\vb-trivia\vb-trivia\bin\Debug\MySql.Data.dll
 \\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb_trivia.frm_trivia.resources
 \\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb_trivia.frm_userpoints.resources
+\\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb_trivia.frm_user.resources
+\\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb_trivia.frm_acerca.resources

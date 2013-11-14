@@ -84,4 +84,12 @@ Public Class mdi_form
     Private Sub MisPuntajesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MisPuntajesToolStripMenuItem.Click
         abrirVentana(frm_userpoints, Me, "")
     End Sub
+
+    Private Sub CambiarDatosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CambiarDatosToolStripMenuItem.Click
+        abrirVentana(frm_user, Me, "")
+    End Sub
+
+    Private Sub AcercaDeToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AcercaDeToolStripMenuItem1.Click
+        abrirVentana(frm_acerca, Me, "")
+    End Sub
 End Class

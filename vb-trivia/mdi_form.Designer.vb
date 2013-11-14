@@ -120,18 +120,18 @@ Partial Class mdi_form
         'CambiarDatosToolStripMenuItem
         '
         Me.CambiarDatosToolStripMenuItem.Name = "CambiarDatosToolStripMenuItem"
-        Me.CambiarDatosToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.CambiarDatosToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.CambiarDatosToolStripMenuItem.Text = "Cambiar Datos"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(141, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(149, 6)
         '
         'CerrarSesiónToolStripMenuItem
         '
         Me.CerrarSesiónToolStripMenuItem.Name = "CerrarSesiónToolStripMenuItem"
-        Me.CerrarSesiónToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.CerrarSesiónToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.CerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión"
         '
         'AcercaDeToolStripMenuItem1
@@ -167,12 +167,12 @@ Partial Class mdi_form
     Friend WithEvents MisPuntajesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents SalirToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents AcercaDeToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents UsuarioToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CambiarDatosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents CerrarSesiónToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents toolStripSep1 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents toolStripResult As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents AcercaDeToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
 
 End Class
