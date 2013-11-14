@@ -76,7 +76,13 @@
         msg = "Usted ha obtenido: {0} puntos"
         MsgBox(String.Format(msg, Result), MsgBoxStyle.Information, "Felicitaciones !")
 
+
+        mdi_form.refreshStatusBar()
         Me.Close()
 
+    End Sub
+
+    Private Sub btClose_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btClose.Click
+        Me.Close()
     End Sub
 End Class

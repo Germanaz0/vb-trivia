@@ -25,6 +25,8 @@ Partial Class mdi_form
     Private Sub InitializeComponent()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel
+        Me.toolStripSep1 = New System.Windows.Forms.ToolStripStatusLabel
+        Me.toolStripResult = New System.Windows.Forms.ToolStripStatusLabel
         Me.mnMain = New System.Windows.Forms.MenuStrip
         Me.AcercaDeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ComenzarAJugarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
@@ -43,7 +45,7 @@ Partial Class mdi_form
         'StatusStrip
         '
         Me.StatusStrip.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel})
+        Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel, Me.toolStripSep1, Me.toolStripResult})
         Me.StatusStrip.Location = New System.Drawing.Point(0, 431)
         Me.StatusStrip.Name = "StatusStrip"
         Me.StatusStrip.Size = New System.Drawing.Size(632, 22)
@@ -55,6 +57,18 @@ Partial Class mdi_form
         Me.ToolStripStatusLabel.Name = "ToolStripStatusLabel"
         Me.ToolStripStatusLabel.Size = New System.Drawing.Size(40, 17)
         Me.ToolStripStatusLabel.Text = "Estado"
+        '
+        'toolStripSep1
+        '
+        Me.toolStripSep1.Name = "toolStripSep1"
+        Me.toolStripSep1.Size = New System.Drawing.Size(19, 17)
+        Me.toolStripSep1.Text = "---"
+        '
+        'toolStripResult
+        '
+        Me.toolStripResult.Name = "toolStripResult"
+        Me.toolStripResult.Size = New System.Drawing.Size(55, 17)
+        Me.toolStripResult.Text = "Resultado"
         '
         'mnMain
         '
@@ -117,7 +131,7 @@ Partial Class mdi_form
         'CerrarSesiónToolStripMenuItem
         '
         Me.CerrarSesiónToolStripMenuItem.Name = "CerrarSesiónToolStripMenuItem"
-        Me.CerrarSesiónToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CerrarSesiónToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.CerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión"
         '
         'AcercaDeToolStripMenuItem1
@@ -158,5 +172,7 @@ Partial Class mdi_form
     Friend WithEvents CambiarDatosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents CerrarSesiónToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents toolStripSep1 As System.Windows.Forms.ToolStripStatusLabel
+    Friend WithEvents toolStripResult As System.Windows.Forms.ToolStripStatusLabel
 
 End Class

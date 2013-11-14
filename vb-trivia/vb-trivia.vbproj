@@ -85,6 +85,12 @@
     <Compile Include="frm_trivia.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_userpoints.Designer.vb">
+      <DependentUpon>frm_userpoints.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_userpoints.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="init_module.vb" />
     <Compile Include="mdi_form.Designer.vb">
       <DependentUpon>mdi_form.vb</DependentUpon>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_trivia.resx">
       <DependentUpon>frm_trivia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_userpoints.resx">
+      <DependentUpon>frm_userpoints.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mdi_form.resx">
       <DependentUpon>mdi_form.vb</DependentUpon>

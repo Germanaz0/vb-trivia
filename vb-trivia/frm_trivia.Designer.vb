@@ -27,6 +27,7 @@ Partial Class frm_trivia
         Me.txAnswer = New System.Windows.Forms.RichTextBox
         Me.lbAnswer = New System.Windows.Forms.Label
         Me.btAnswer = New System.Windows.Forms.Button
+        Me.btClose = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
         'txQuestion
@@ -73,11 +74,21 @@ Partial Class frm_trivia
         Me.btAnswer.Text = "Responder"
         Me.btAnswer.UseVisualStyleBackColor = True
         '
+        'btClose
+        '
+        Me.btClose.Location = New System.Drawing.Point(16, 333)
+        Me.btClose.Name = "btClose"
+        Me.btClose.Size = New System.Drawing.Size(75, 23)
+        Me.btClose.TabIndex = 21
+        Me.btClose.Text = "Cerrar"
+        Me.btClose.UseVisualStyleBackColor = True
+        '
         'frm_trivia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(653, 368)
+        Me.Controls.Add(Me.btClose)
         Me.Controls.Add(Me.btAnswer)
         Me.Controls.Add(Me.lbAnswer)
         Me.Controls.Add(Me.txAnswer)
@@ -94,4 +105,5 @@ Partial Class frm_trivia
     Friend WithEvents txAnswer As System.Windows.Forms.RichTextBox
     Friend WithEvents lbAnswer As System.Windows.Forms.Label
     Friend WithEvents btAnswer As System.Windows.Forms.Button
+    Friend WithEvents btClose As System.Windows.Forms.Button
 End Class

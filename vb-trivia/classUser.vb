@@ -58,4 +58,32 @@
         Return db.QUERY(Query)
     End Function
 
+    Public Function getTotalPoints() As Integer
+        Dim Query As String
+        Dim Res As System.Data.DataTable
+        Dim toReturn As Object
+        Query = "SELECT SUM(resultado) as SUMA FROM resultados WHERE usuario_id={0}"
+
+        Res = init_module.db.LEER(String.Format(Query, Me.ID))
+
+        If (Res.Rows.Count > 0) Then
+            toReturn = Res.Rows(0).Item("SUMA")
+            If (IsNumeric(toReturn)) Then
+                Return toReturn
+            End If
+        End If
+        Return 0
+    End Function
+
+    Public Function getPoints() As System.Data.DataTable
+        Dim Query As String
+        Dim Res As System.Data.DataTable
+
+        Query = "SELECT id, usuario_id, resultado, created_at FROM resultados WHERE usuario_id={0}"
+
+        Res = init_module.db.LEER(String.Format(Query, Me.ID))
+
+        Return Res
+    End Function
+
 End Class

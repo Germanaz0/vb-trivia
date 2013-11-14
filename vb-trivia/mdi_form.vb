@@ -44,13 +44,27 @@ Public Class mdi_form
 
 
     Private Sub mdi_form_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Me.ToolStripStatusLabel.Text = "**** " & loggedUser.Username.ToUpper() & " ****"
+
         Me.Text = "Bienvenidos al sistema de Trivias v1.0"
 
         Me.totalQuestions = init_module.countAllQuestions()
 
         If (Me.totalQuestions = 0) Then
             ComenzarAJugarToolStripMenuItem.Enabled = False
+        End If
+
+        refreshStatusBar()
+    End Sub
+
+
+    Public Sub refreshStatusBar()
+        Me.ToolStripStatusLabel.Text = "* " & loggedUser.Username.ToUpper() & " *"
+        Me.toolStripResult.Text = "Resultado: " & loggedUser.getTotalPoints() & " Puntos"
+
+        If (loggedUser.getTotalPoints() = 0) Then
+            MisPuntajesToolStripMenuItem.Enabled = False
+        Else
+            MisPuntajesToolStripMenuItem.Enabled = True
         End If
     End Sub
 
@@ -64,5 +78,10 @@ Public Class mdi_form
 
     Private Sub ComenzarAJugarToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComenzarAJugarToolStripMenuItem.Click
         abrirVentana(frm_trivia, Me, "")
+    End Sub
+
+
+    Private Sub MisPuntajesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MisPuntajesToolStripMenuItem.Click
+        abrirVentana(frm_userpoints, Me, "")
     End Sub
 End Class
