@@ -70,5 +70,13 @@
         Next index
 
         init_module.currentTriviaResult = Result
+        init_module.loggedUser.saveResult(Result)
+
+        Dim msg As String
+        msg = "Usted ha obtenido: {0} puntos"
+        MsgBox(String.Format(msg, Result), MsgBoxStyle.Information, "Felicitaciones !")
+
+        Me.Close()
+
     End Sub
 End Class

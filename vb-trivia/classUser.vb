@@ -47,4 +47,15 @@
     End Function
 
 
+    Public Function saveResult(ByVal Result As Integer)
+
+        Dim Query As String
+
+        Query = "INSERT INTO resultados (id, usuario_id, resultado, created_at) VALUES (NULL, '{0}', '{1}', CURRENT_TIMESTAMP);"
+        Query = String.Format(Query, init_module.loggedUser.ID, Result)
+
+
+        Return db.QUERY(Query)
+    End Function
+
 End Class
