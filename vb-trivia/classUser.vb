@@ -46,8 +46,5 @@
         Return False
     End Function
 
-    Public Sub addPoints(ByVal Points As Integer)
-        Me.currentPoints = Me.currentPoints + Points
-    End Sub
 
 End Class

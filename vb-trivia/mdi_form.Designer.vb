@@ -36,7 +36,6 @@ Partial Class mdi_form
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator
         Me.CerrarSesiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AcercaDeToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.Panel1 = New System.Windows.Forms.Panel
         Me.StatusStrip.SuspendLayout()
         Me.mnMain.SuspendLayout()
         Me.SuspendLayout()
@@ -127,21 +126,11 @@ Partial Class mdi_form
         Me.AcercaDeToolStripMenuItem1.Size = New System.Drawing.Size(68, 20)
         Me.AcercaDeToolStripMenuItem1.Text = "Acerca De"
         '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 24)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(632, 407)
-        Me.Panel1.TabIndex = 11
-        '
         'mdi_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(632, 453)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.StatusStrip)
         Me.Controls.Add(Me.mnMain)
         Me.IsMdiContainer = True
@@ -159,7 +148,6 @@ Partial Class mdi_form
     Friend WithEvents ToolStripStatusLabel As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents StatusStrip As System.Windows.Forms.StatusStrip
     Friend WithEvents mnMain As System.Windows.Forms.MenuStrip
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents AcercaDeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ComenzarAJugarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MisPuntajesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

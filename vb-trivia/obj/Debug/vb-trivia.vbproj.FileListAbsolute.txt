@@ -10,3 +10,4 @@
 \\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb-trivia.pdb
 \\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb_trivia.mdi_form.resources
 \\VBOXSVR\Público\vb-trivia\vb-trivia\bin\Debug\MySql.Data.dll
+\\VBOXSVR\Público\vb-trivia\vb-trivia\obj\Debug\vb_trivia.frm_trivia.resources

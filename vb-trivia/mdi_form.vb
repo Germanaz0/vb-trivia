@@ -61,4 +61,8 @@ Public Class mdi_form
     Private Sub CerrarSesiónToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CerrarSesiónToolStripMenuItem.Click
         init_module.logoutFromSystem()
     End Sub
+
+    Private Sub ComenzarAJugarToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ComenzarAJugarToolStripMenuItem.Click
+        abrirVentana(frm_trivia, Me, "")
+    End Sub
 End Class
