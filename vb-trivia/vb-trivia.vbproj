@@ -70,6 +70,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classTrivia.vb" />
     <Compile Include="classUser.vb" />
     <Compile Include="frm_login.vb">
       <SubType>Form</SubType>

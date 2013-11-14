@@ -4,6 +4,8 @@
     Public Password As String = ""
     Public Rol As String = "user"
 
+    Protected currentPoints As Integer = 0
+
     Public Sub New()
 
     End Sub
@@ -23,15 +25,29 @@
 
         Res = db.LEER(Query)
 
-        If (Res.Columns.Count = 0) Then
+        If (Res.Rows.Count = 0) Then
             Throw New Exception("El Usuario o la Contraseña no coinciden")
         End If
 
         Me.ID = Res.Rows(0).Item("id")
-        MsgBox(Me.ID)
+        Me.Username = Res.Rows(0).Item("username")
+        Me.Rol = Res.Rows(0).Item("rol")
+        Me.Password = Res.Rows(0).Item("password")
 
-        Return Nothing
+        Return Me
 
     End Function
+
+    Public Function isLoggedIn()
+        If (Me.ID > 0) Then
+            Return True
+        End If
+
+        Return False
+    End Function
+
+    Public Sub addPoints(ByVal Points As Integer)
+        Me.currentPoints = Me.currentPoints + Points
+    End Sub
 
 End Class
